@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Charter';
+  src: url('./fonts/charterRegular.ttf');
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.Header {
+  /* How it will look before scrolled */
+
+  background-color: #38bdf8 !important;
+  width: 100%;
+  /* To give smoote change */
+    -webkit-transition: all ease-out .5s;
+  -moz-transition: all ease-out .5s;
+  -o-transition: all ease-out .5s;
+  transition: all ease-out .5s;
+}
+.animated-element{
+  -webkit-transition: all ease-out .5s;
+  -moz-transition: all ease-out .5s;
+  -o-transition: all ease-out .5s;
+  transition: all ease-out .5s;
+}
+.Header.about-class{
+  background-color: #292929 !important;
+  color: white;
+  border-bottom: white 1px solid;
+
+}
+
+.Header.register-class{
+  background-color: #16a34a !important;
+  color: white;
+  border-bottom: white 1px solid;
+}
+
+.Header.why-free-class{
+  background-color: #fbbf24 !important;
+  color: black;
+  border-bottom: black 1px solid;
+}
+
+
+.Header.scrolled {
+  /* How it will look when scrolled */
+  background-color: #FFFFFF !important;
+}
+
+.button-header.scrolled{
+  background-color: #38bdf8 !important;
+}
+.button-header.scrolled:hover{
+  outline-color: black;
+}
