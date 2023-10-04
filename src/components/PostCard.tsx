@@ -1,4 +1,3 @@
-import React from "react";
 import { Course } from "../types/courses";
 import { MdVideoLibrary } from "react-icons/md";
 import { Link } from "react-router-dom";

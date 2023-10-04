@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { BiTrendingUp } from "react-icons/bi";
 import PostCard from "../PostCard";
 import Banner from "../Banner";

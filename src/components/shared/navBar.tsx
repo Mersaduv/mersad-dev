@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ContactMe from "../ContactMe";
 import { menuItems } from "../../constant/paths";
 import { Link, useLocation } from "react-router-dom";

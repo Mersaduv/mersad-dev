@@ -1,4 +1,4 @@
-import React from "react";
+
 import SmileGrid from "./SmileGrid";
 // import Logo from "../static/banner.png";
 const styles = {

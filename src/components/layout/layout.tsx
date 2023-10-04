@@ -1,4 +1,4 @@
-import React, { ReactElement, useState } from "react";
+import { ReactElement, useState } from "react";
 import Header from "../Header";
 import { BsArrowBarRight } from "react-icons/bs";
 import DrawerMenu from "../DrawerMenu";

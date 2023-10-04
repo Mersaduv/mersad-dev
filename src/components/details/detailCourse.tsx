@@ -1,4 +1,3 @@
-import React from "react";
 import { useParams } from "react-router-dom";
 import { BiUser, BiLogoTelegram, BiDollar } from "react-icons/bi";
 import { MdVideoLibrary } from "react-icons/md";
