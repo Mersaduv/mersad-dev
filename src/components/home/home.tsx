@@ -99,7 +99,7 @@ const Home = () => {
               <div
                 key={keyItem}
                 className={`py-2 cursor-pointer px-4 bg-gray-100 inline-block rounded-full hover:outline outline-blue-100 ${
-                  selectedKeyword === keyItem ? " text-white bg-[#43bef4]" : ""
+                  selectedKeyword === keyItem ? " text-white selection" : ""
                 }`}
                 onClick={() => setSelectedKeyword(keyItem)}
               >

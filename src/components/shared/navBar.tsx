@@ -18,23 +18,32 @@ const Navbar = () => {
   const [shouldHandleScroll, setShouldHandleScroll] = useState<boolean>(false);
   useEffect(() => {
     const header = document.querySelector(".Header");
+    const buttonHeader = document.querySelector(".button-header");
 
     if (location.pathname === "/") {
       header?.classList.remove("about-class");
       header?.classList.remove("register-class");
       header?.classList.remove("why-free-class");
+      header?.classList.remove("scrolled");
+      buttonHeader?.classList.remove("scrolled");
       setShouldHandleScroll(true);
     } else if (location.pathname === "/about") {
       header?.classList.remove("register-class");
       header?.classList.remove("why-free-class");
       header?.classList.add("about-class");
+      header?.classList.remove("scrolled");
+      buttonHeader?.classList.remove("scrolled");
       setShouldHandleScroll(false);
     } else if (location.pathname === "/new-course") {
       header?.classList.remove("why-free-class");
       header?.classList.add("register-class");
+      header?.classList.remove("scrolled");
+      buttonHeader?.classList.remove("scrolled");
       setShouldHandleScroll(false);
     } else if (location.pathname === "/why-free") {
       header?.classList.add("why-free-class");
+      header?.classList.remove("scrolled");
+      buttonHeader?.classList.remove("scrolled");
       setShouldHandleScroll(false);
     }
   }, [location]);

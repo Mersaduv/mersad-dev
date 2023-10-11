@@ -2,7 +2,7 @@ import { routes } from "./routes";
 const baseURL = "https://apimersaddevme.azurewebsites.net/api"
 
 export const paths = {
-  getCourses: `${baseURL}/courses/v1`,
+  getCourses: `${baseURL}/courses`,
   getCourse: (courseId: string) => `${baseURL}/courses/${courseId}`,
 };
 

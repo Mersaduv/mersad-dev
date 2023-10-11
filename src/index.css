@@ -68,3 +68,6 @@ code {
 .button-header.scrolled:hover{
   outline-color: black;
 }
+.selection {
+  background: #43bef4 !important;
+}

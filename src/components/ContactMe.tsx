@@ -3,6 +3,7 @@ import { Fragment } from "react";
 // icons
 import { AiOutlineMail, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { BsInstagram } from "react-icons/bs";
+import resume from "../assets/mersad-dev-resume.pdf";
 
 interface Props {
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -93,13 +94,14 @@ export default function ContactMe({ isOpen, setIsOpen }: Props) {
                   >
                     Got it
                   </button>
-                  <button
-                    type="button"
+                  <a
+                    href={resume}
                     className="inline-flex outline-double justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
                     onClick={() => setIsOpen((prev) => !prev)}
+                    download
                   >
                     Get resume
-                  </button>
+                  </a>
                 </div>
               </Dialog.Panel>
             </Transition.Child>

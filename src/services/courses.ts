@@ -16,7 +16,7 @@ export const useGetCourse = (courseId?: string) => {
   return useQuery<string, Error, Course>(
     ["GET_COURSE_QUERY_KEY", courseId],
     () =>
-      fetch(`https://apimersaddevme.azurewebsites.net/api/courses/${courseId}`).then(handleQuery),
+      fetch(paths.getCourse(courseId!)).then(handleQuery),
     {
       enabled: !!courseId,
     }

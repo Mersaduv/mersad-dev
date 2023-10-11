@@ -27,8 +27,8 @@ const PostCard = ({ courseItem, index }: props) => {
           {courseItem.title}
         </div>
         <div className="line-clamp-2 break-words">
-          Free If you don't have a good financial situation, you can access the
-          courses for free through the Telegram channel.
+          "If you don't have enough money to pay for expensive courses, you can
+          get them for free through Telegram."
         </div>
         <div className="flex gap-2 items-center">
           <div className="mb-2 text-lg font-bold">.</div>
